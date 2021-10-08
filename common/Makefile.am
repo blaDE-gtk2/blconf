@@ -1,46 +1,47 @@
 
 AM_CPPFLAGS = \
+	-DGLIB_DISABLE_DEPRECATION_WARNINGS \
 	-I$(top_srcdir) \
-	-DLIBXFCONF_COMPILATION \
-	-DG_LOG_DOMAIN=\"xfconf-common\" \
+	-DLIBBLCONF_COMPILATION \
+	-DG_LOG_DOMAIN=\"blconf-common\" \
 	$(PLATFORM_CPPFLAGS)
 
 noinst_LTLIBRARIES = \
-	libxfconf-common.la \
-	libxfconf-gvaluefuncs.la
+	libblconf-common.la \
+	libblconf-gvaluefuncs.la
 
-libxfconf_common_la_SOURCES = \
-	xfconf-errors.c \
-	xfconf-marshal.c \
-	xfconf-marshal.h
+libblconf_common_la_SOURCES = \
+	blconf-errors.c \
+	blconf-marshal.c \
+	blconf-marshal.h
 
-libxfconf_common_la_CFLAGS = \
+libblconf_common_la_CFLAGS = \
 	$(GLIB_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
-libxfconf_common_la_LDFLAGS = \
+libblconf_common_la_LDFLAGS = \
 	$(PLATFORM_LDFLAGS)
 
-libxfconf_common_la_LIBADD = \
+libblconf_common_la_LIBADD = \
 	$(GLIB_LIBS)
 
-libxfconf_built_sources = \
-	xfconf-alias.h \
-	xfconf-aliasdef.c
+libblconf_built_sources = \
+	blconf-alias.h \
+	blconf-aliasdef.c
 
-libxfconf_gvaluefuncs_la_SOURCES = \
-	xfconf-gvaluefuncs.c \
-	xfconf-gvaluefuncs.h
+libblconf_gvaluefuncs_la_SOURCES = \
+	blconf-gvaluefuncs.c \
+	blconf-gvaluefuncs.h
 
-libxfconf_gvaluefuncs_la_CFLAGS = \
+libblconf_gvaluefuncs_la_CFLAGS = \
 	$(GLIB_CFLAGS) \
 	$(DBUS_GLIB_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
-libxfconf_gvaluefuncs_la_LDFLAGS = \
+libblconf_gvaluefuncs_la_LDFLAGS = \
 	$(PLATFORM_LDFLAGS)
 
-libxfconf_gvaluefuncs_la_LIBADD = \
+libblconf_gvaluefuncs_la_LIBADD = \
 	$(GLIB_LIBS) \
 	$(DBUS_GLIB_LIBS)
 
@@ -48,17 +49,17 @@ libxfconf_gvaluefuncs_la_LIBADD = \
 if MAINTAINER_MODE
 
 BUILT_SOURCES = \
-	xfconf-marshal.c \
-	xfconf-marshal.h
+	blconf-marshal.c \
+	blconf-marshal.h
 
-xfconf-marshal.h: stamp-xfconf-marshal.h
+blconf-marshal.h: stamp-blconf-marshal.h
 	@true
-stamp-xfconf-marshal.h: $(srcdir)/xfconf-marshal.list Makefile
-	$(AM_V_GEN) glib-genmarshal --prefix=_xfconf_marshal $(srcdir)/xfconf-marshal.list --header > xfconf-marshal.h \
+stamp-blconf-marshal.h: $(srcdir)/blconf-marshal.list Makefile
+	$(AM_V_GEN) glib-genmarshal --prefix=_blconf_marshal $(srcdir)/blconf-marshal.list --header > blconf-marshal.h \
 	&& echo timestamp > $(@F)
-xfconf-marshal.c: $(srcdir)/xfconf-marshal.list Makefile
-	$(AM_V_GEN) echo '#include "xfconf-marshal.h"' > xfconf-marshal.c \
-	&& glib-genmarshal --prefix=_xfconf_marshal $(srcdir)/xfconf-marshal.list --body >> xfconf-marshal.c
+blconf-marshal.c: $(srcdir)/blconf-marshal.list Makefile
+	$(AM_V_GEN) echo '#include "blconf-marshal.h"' > blconf-marshal.c \
+	&& glib-genmarshal --prefix=_blconf_marshal $(srcdir)/blconf-marshal.list --body >> blconf-marshal.c
 
 
 
@@ -67,28 +68,28 @@ CLEANFILES = \
 	expected-abi
 
 DISTCLEANFILES = \
-	$(libxfconf_built_sources)
+	$(libblconf_built_sources)
 
 BUILT_SOURCES += \
-	$(libxfconf_built_sources)
+	$(libblconf_built_sources)
 
-xfconf-alias.h: make-exo-alias.pl $(top_srcdir)/xfconf/xfconf.symbols
-	$(AM_V_GEN) $(PERL) $(srcdir)/make-exo-alias.pl <$(top_srcdir)/xfconf/xfconf.symbols >xfconf-alias.h
+blconf-alias.h: make-blxo-alias.pl $(top_srcdir)/blconf/blconf.symbols
+	$(AM_V_GEN) $(PERL) $(srcdir)/make-blxo-alias.pl <$(top_srcdir)/blconf/blconf.symbols >blconf-alias.h
 
-xfconf-aliasdef.c: make-exo-alias.pl $(top_srcdir)/xfconf/xfconf.symbols
-	$(AM_V_GEN) $(PERL) $(srcdir)/make-exo-alias.pl -def <$(top_srcdir)/xfconf/xfconf.symbols >xfconf-aliasdef.c
+blconf-aliasdef.c: make-blxo-alias.pl $(top_srcdir)/blconf/blconf.symbols
+	$(AM_V_GEN) $(PERL) $(srcdir)/make-blxo-alias.pl -def <$(top_srcdir)/blconf/blconf.symbols >blconf-aliasdef.c
 
 endif
 
 
 EXTRA_DIST = \
-	make-exo-alias.pl \
-	xfconf-alias.h \
-	xfconf-aliasdef.c \
-	xfconf-common-private.h \
-	xfconf-dbus.xml \
-	xfconf-marshal.list \
-	xfconf-types.c
+	make-blxo-alias.pl \
+	blconf-alias.h \
+	blconf-aliasdef.c \
+	blconf-common-private.h \
+	blconf-dbus.xml \
+	blconf-marshal.list \
+	blconf-types.c
 
 # required for make distcheck
 dist-hook: all

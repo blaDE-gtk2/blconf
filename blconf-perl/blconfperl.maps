@@ -1,0 +1,2 @@
+BLCONF_TYPE_CHANNEL  BlconfChannel      GObject  Xfce4::Blconf::Channel
+BLCONF_ERROR         BLCONF_TYPE_ERROR  GError   Xfce4::Blconf::Error

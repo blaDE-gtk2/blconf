@@ -1,0 +1,5 @@
+#include <blconf/blconf.h>
+#include <blconfd/blconf-backend.h>
+
+blconf_channel_get_type
+blconf_backend_get_type

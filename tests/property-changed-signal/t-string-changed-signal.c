@@ -1,5 +1,5 @@
 /*
- *  xfconf
+ *  blconf
  *
  *  Copyright (c) 2008 Brian Tarricone <bjt23@cornell.edu>
  *
@@ -28,7 +28,7 @@ typedef struct
 } SignalTestData;
 
 static void
-test_signal_changed(XfconfChannel *channel,
+test_signal_changed(BlconfChannel *channel,
                     const gchar *property,
                     const GValue *value,
                     gpointer user_data)
@@ -51,21 +51,21 @@ int
 main(int argc,
      char **argv)
 {
-    XfconfChannel *channel;
+    BlconfChannel *channel;
     SignalTestData std = { NULL, FALSE };
     
     std.mloop = g_main_loop_new(NULL, FALSE);
 
-    if(!xfconf_tests_start())
+    if(!blconf_tests_start())
         return 2;
     
-    channel = xfconf_channel_new(TEST_CHANNEL_NAME);
-    xfconf_channel_reset_property (channel, test_string_property, FALSE);
+    channel = blconf_channel_new(TEST_CHANNEL_NAME);
+    blconf_channel_reset_property (channel, test_string_property, FALSE);
 
     g_signal_connect(G_OBJECT(channel), "property-changed",
                      G_CALLBACK(test_signal_changed), &std);
     
-    TEST_OPERATION(xfconf_channel_set_string(channel, test_string_property, test_string));
+    TEST_OPERATION(blconf_channel_set_string(channel, test_string_property, test_string));
     
     g_timeout_add(1500, test_watchdog, &std);
     g_main_loop_run(std.mloop);
@@ -73,7 +73,7 @@ main(int argc,
     g_main_loop_unref(std.mloop);
     g_object_unref(G_OBJECT(channel));
     
-    xfconf_tests_end();
+    blconf_tests_end();
     
     return std.got_signal ? 0 : 1;
 }

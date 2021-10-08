@@ -7,95 +7,95 @@
 # Xosé <xosecalvo@gmail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfconf\n"
+"Project-Id-Version: Blconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-27 18:32+0200\n"
 "PO-Revision-Date: 2015-09-20 19:28+0000\n"
 "Last-Translator: Xosé <xosecalvo@gmail.com>\n"
-"Language-Team: Galician (http://www.transifex.com/xfce/xfconf/language/gl/)\n"
+"Language-Team: Galician (http://www.transifex.com/xfce/blconf/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../xfconf/xfconf-cache.c:897
+#: ../blconf/blconf-cache.c:897
 #, c-format
 msgid "Failed to make ResetProperty DBus call"
 msgstr "Produciuse un erro ao chamar a ResetProperty de DBus"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:277
+#: ../blconfd/blconf-backend-perchannel-xml.c:277
 #, c-format
 msgid "Unable to create configuration directory \"%s\""
 msgstr "Non foi posíbel crear o directorio de configuración «%s»"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:322
-#: ../xfconfd/xfconf-daemon.c:238
+#: ../blconfd/blconf-backend-perchannel-xml.c:322
+#: ../blconfd/blconf-daemon.c:238
 #, c-format
 msgid "Permission denied while modifying property \"%s\" on channel \"%s\""
 msgstr "Denegouse o permiso para modificar a propiedade «%s» da canle «%s»"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:387
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:469
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:634
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:654 ../xfconf-query/main.c:344
+#: ../blconfd/blconf-backend-perchannel-xml.c:387
+#: ../blconfd/blconf-backend-perchannel-xml.c:469
+#: ../blconfd/blconf-backend-perchannel-xml.c:634
+#: ../blconfd/blconf-backend-perchannel-xml.c:654 ../blconf-query/main.c:344
 #, c-format
 msgid "Property \"%s\" does not exist on channel \"%s\""
 msgstr "A propiedade «%s» non existe na canle «%s»"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:601
+#: ../blconfd/blconf-backend-perchannel-xml.c:601
 #, c-format
 msgid "Unable to remove channel \"%s\": %s"
 msgstr "Non é posíbel eliminar a canle «%s»: %s"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1298
+#: ../blconfd/blconf-backend-perchannel-xml.c:1298
 #, c-format
 msgid "Invalid type for <property>: \"%s\""
 msgstr "<property> ten un tipo incorrecto: «%s»"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1314
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1390
+#: ../blconfd/blconf-backend-perchannel-xml.c:1314
+#: ../blconfd/blconf-backend-perchannel-xml.c:1390
 #, c-format
 msgid "Unable to parse value of type \"%s\" from \"%s\""
 msgstr "Non foi posíbel analizar o valor de tipo «%s» de «%s»"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1370
+#: ../blconfd/blconf-backend-perchannel-xml.c:1370
 #, c-format
 msgid "The type attribute of <value> cannot be an array"
 msgstr "O atributo de tipo de <value> non pode ser unha matriz"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1379
+#: ../blconfd/blconf-backend-perchannel-xml.c:1379
 #, c-format
 msgid "Invalid type for <value>: \"%s\""
 msgstr "<value> ten un tipo incorrecto: «%s»"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1655
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1904
+#: ../blconfd/blconf-backend-perchannel-xml.c:1655
+#: ../blconfd/blconf-backend-perchannel-xml.c:1904
 #, c-format
 msgid "Channel \"%s\" does not exist"
 msgstr "A canle «%s» non existe"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1962
+#: ../blconfd/blconf-backend-perchannel-xml.c:1962
 #, c-format
 msgid "Unable to write channel \"%s\": %s"
 msgstr "Non é posíbel escribir na canle «%s»: %s"
 
-#: ../xfconfd/xfconf-backend-factory.c:76
+#: ../blconfd/blconf-backend-factory.c:76
 #, c-format
-msgid "Unable to find Xfconf backend of type \"%s\""
-msgstr "Non foi posíbel atopar a infraestrutura de Xfconf de tipo «%s»"
+msgid "Unable to find Blconf backend of type \"%s\""
+msgstr "Non foi posíbel atopar a infraestrutura de Blconf de tipo «%s»"
 
-#: ../xfconfd/xfconf-backend.c:103
+#: ../blconfd/blconf-backend.c:103
 #, c-format
 msgid "Property names must start with a '/' character"
 msgstr "Os nomes das propiedades deben comezar cun caracter '/'"
 
-#: ../xfconfd/xfconf-backend.c:112
+#: ../blconfd/blconf-backend.c:112
 #, c-format
 msgid "The root element ('/') is not a valid property name"
 msgstr "O elemento raíz ('/') non é un nome de propiedade válido"
 
-#: ../xfconfd/xfconf-backend.c:127
+#: ../blconfd/blconf-backend.c:127
 #, c-format
 msgid ""
 "Property names can only include the ASCII characters A-Z, a-z, 0-9, '_', "
@@ -103,237 +103,237 @@ msgid ""
 "separator"
 msgstr "Os nomes de propiedades só poden incluír os caracteres ASCII A-Z, a-z, 0-9, '_', '-', ':', '.', ',', '[', ']', '{', '}', '<' e '>', así como '/' como separador"
 
-#: ../xfconfd/xfconf-backend.c:136
+#: ../blconfd/blconf-backend.c:136
 #, c-format
 msgid "Property names cannot have two or more consecutive '/' characters"
 msgstr "Os nomes das propiedades non poden ter dous ou máis caracteres '/' seguidos"
 
-#: ../xfconfd/xfconf-backend.c:147
+#: ../blconfd/blconf-backend.c:147
 #, c-format
 msgid "Property names cannot end with a '/' character"
 msgstr "Os nomes de propiedades non poden rematar co caracter '/'"
 
-#: ../xfconfd/xfconf-backend.c:164
+#: ../blconfd/blconf-backend.c:164
 #, c-format
 msgid "Channel name cannot be an empty string"
 msgstr "O nome da canle non pode estar baleiro"
 
-#: ../xfconfd/xfconf-backend.c:179
+#: ../blconfd/blconf-backend.c:179
 #, c-format
 msgid ""
 "Channel names can only include the ASCII characters A-Z, a-z, 0-9, '{', '}',"
 " '|', ']', '[', ':', ',', '.', '_', and '-'"
 msgstr "Os nomes das canles só poden incluír os caracteres ASCII A-Z, a-z, 0-9, '{', '}', '|', ']', '[', ':', ',', '.', '_', e '-'"
 
-#: ../xfconfd/xfconf-backend.c:401
+#: ../blconfd/blconf-backend.c:401
 #, c-format
 msgid ""
 "The property name can only be empty or \"/\" if a recursive reset was "
 "specified"
 msgstr "O nome da propiedade só pode estar baleiro ou ser \"/\" se se especificou un restablecemento recursivo"
 
-#: ../xfconfd/main.c:134
-msgid "Prints the xfconfd version."
-msgstr "Mostra a versión de xfconfd."
+#: ../blconfd/main.c:134
+msgid "Prints the blconfd version."
+msgstr "Mostra a versión de blconfd."
 
-#: ../xfconfd/main.c:136
+#: ../blconfd/main.c:136
 msgid ""
 "Configuration backends to use.  The first backend specified is opened "
 "read/write; the others, read-only."
 msgstr "Motores de configuración a usar. O primeiro motor especificado ábrese en modo lectura/escritura; os outros en só lectura."
 
-#: ../xfconfd/main.c:139
+#: ../blconfd/main.c:139
 msgid "Fork into background after starting; only useful for testing purposes"
 msgstr "Facer fork ao segundo plano despois de iniciar: só é útil para facer probas"
 
-#: ../xfconfd/main.c:159
+#: ../blconfd/main.c:159
 msgid "Xfce Configuration Daemon"
 msgstr "Daemon de configuración de Xfce"
 
-#: ../xfconfd/main.c:168
+#: ../blconfd/main.c:168
 msgid "Xfce configuration daemon"
 msgstr "Daemon de configuración de Xfce"
 
-#: ../xfconfd/main.c:170
+#: ../blconfd/main.c:170
 msgid "Report bugs to http://bugs.xfce.org/\n"
 msgstr "Comunique os erros en http://bugs.xfce.org/\n"
 
-#: ../xfconfd/main.c:173
+#: ../blconfd/main.c:173
 #, c-format
 msgid "Error parsing options: %s\n"
 msgstr "Erro ao analizar as opcións: %s\n"
 
-#: ../xfconfd/xfconf-daemon.c:482
+#: ../blconfd/blconf-daemon.c:482
 #, c-format
-msgid "Another Xfconf daemon is already running"
-msgstr "Xa se está executando outro daemon de Xfconf"
+msgid "Another Blconf daemon is already running"
+msgstr "Xa se está executando outro daemon de Blconf"
 
-#: ../xfconfd/xfconf-daemon.c:517
+#: ../blconfd/blconf-daemon.c:517
 #, c-format
 msgid "No backends could be started"
 msgstr "Non se puido iniciar ningún motor"
 
-#: ../xfconf-query/main.c:90 ../xfconf-query/main.c:95
+#: ../blconf-query/main.c:90 ../blconf-query/main.c:95
 msgid "set"
 msgstr "definir"
 
-#: ../xfconf-query/main.c:100
+#: ../blconf-query/main.c:100
 msgid "reset"
 msgstr "restaurar"
 
-#: ../xfconf-query/main.c:176
+#: ../blconf-query/main.c:176
 msgid "Version information"
 msgstr "Información da versión"
 
-#: ../xfconf-query/main.c:180
+#: ../blconf-query/main.c:180
 msgid "The channel to query/modify"
 msgstr "A canle a consultar/modificar"
 
-#: ../xfconf-query/main.c:184
+#: ../blconf-query/main.c:184
 msgid "The property to query/modify"
 msgstr "A propiedade a consultar/modificar"
 
-#: ../xfconf-query/main.c:188
+#: ../blconf-query/main.c:188
 msgid "The new value to set for the property"
 msgstr "O novo valor definido para a propiedade"
 
-#: ../xfconf-query/main.c:192
+#: ../blconf-query/main.c:192
 msgid "List properties (or channels if -c is not specified)"
 msgstr "Listar as propiedades (ou as canles se non se especifica -c)"
 
-#: ../xfconf-query/main.c:196
+#: ../blconf-query/main.c:196
 msgid "Verbose output"
 msgstr "Saída detallada"
 
-#: ../xfconf-query/main.c:200
+#: ../blconf-query/main.c:200
 msgid "Create a new property if it does not already exist"
 msgstr "Crear unha nova propiedade se esta non existe"
 
-#: ../xfconf-query/main.c:204
+#: ../blconf-query/main.c:204
 msgid "Specify the property value type"
 msgstr "Especifique o valor do tipo da propiedade"
 
-#: ../xfconf-query/main.c:208
+#: ../blconf-query/main.c:208
 msgid "Reset property"
 msgstr "Restablecer a propiedade"
 
-#: ../xfconf-query/main.c:212
+#: ../blconf-query/main.c:212
 msgid "Recursive (use with -r)"
 msgstr "Recursivo (usar con -r)"
 
-#: ../xfconf-query/main.c:216
+#: ../blconf-query/main.c:216
 msgid "Force array even if only one element"
 msgstr "Forzar que sexa unha matriz incluso se só ten un elemento"
 
-#: ../xfconf-query/main.c:220
+#: ../blconf-query/main.c:220
 msgid "Invert an existing boolean property"
 msgstr "Inverter unha propiedade booleana existente"
 
-#: ../xfconf-query/main.c:224
+#: ../blconf-query/main.c:224
 msgid "Monitor a channel for property changes"
 msgstr "Monitorizar os cambios nas propiedades dunha canle"
 
-#: ../xfconf-query/main.c:249
+#: ../blconf-query/main.c:249
 #, c-format
-msgid "Failed to init libxfconf: %s"
-msgstr "Produciuse un erro ao iniciar libxfconf: %s"
+msgid "Failed to init libblconf: %s"
+msgstr "Produciuse un erro ao iniciar libblconf: %s"
 
-#: ../xfconf-query/main.c:254
-msgid "- Xfconf commandline utility"
-msgstr "- Utilidade de liña de ordes de Xfconf"
+#: ../blconf-query/main.c:254
+msgid "- Blconf commandline utility"
+msgstr "- Utilidade de liña de ordes de Blconf"
 
-#: ../xfconf-query/main.c:259
+#: ../blconf-query/main.c:259
 #, c-format
 msgid "Option parsing failed: %s"
 msgstr "Produciuse un erro ao analizar a opción: %s"
 
-#: ../xfconf-query/main.c:269
+#: ../blconf-query/main.c:269
 msgid "The Xfce development team. All rights reserved."
 msgstr "O equipo de desenvolvemento de Xfce. Todos os dereitos reservados."
 
-#: ../xfconf-query/main.c:270
+#: ../blconf-query/main.c:270
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Comunique os erros a <%s>."
 
-#: ../xfconf-query/main.c:282
+#: ../blconf-query/main.c:282
 msgid "Channels:"
 msgstr "Canles:"
 
-#: ../xfconf-query/main.c:298
+#: ../blconf-query/main.c:298
 msgid "No property specified"
 msgstr "Non se especificou ningunha propiedade"
 
-#: ../xfconf-query/main.c:304
+#: ../blconf-query/main.c:304
 msgid "--create and --reset options can not be used together"
 msgstr "As opcións --create e --reset non se poden usar xuntas"
 
-#: ../xfconf-query/main.c:310
+#: ../blconf-query/main.c:310
 msgid "--create and --reset options can not be used together with --list"
 msgstr "As opcións --create e --reset non se poden usar con --list"
 
-#: ../xfconf-query/main.c:322
+#: ../blconf-query/main.c:322
 #, c-format
 msgid "Start monitoring channel \"%s\":"
 msgstr "Iniciar a canle de monitorización «%s»:"
 
-#: ../xfconf-query/main.c:356 ../xfconf-query/main.c:461
-#: ../xfconf-query/main.c:530
+#: ../blconf-query/main.c:356 ../blconf-query/main.c:461
+#: ../blconf-query/main.c:530
 msgid "Failed to set property"
 msgstr "Produciuse un erro ao definir a propiedade"
 
-#: ../xfconf-query/main.c:360
+#: ../blconf-query/main.c:360
 msgid "--toggle only works with boolean values"
 msgstr "--toggle só funciona con valores booleanos"
 
-#: ../xfconf-query/main.c:369 ../xfconf-query/main.c:388
+#: ../blconf-query/main.c:369 ../blconf-query/main.c:388
 msgid "(unknown)"
 msgstr "(descoñecido)"
 
-#: ../xfconf-query/main.c:378
+#: ../blconf-query/main.c:378
 #, c-format
 msgid "Value is an array with %d items:"
 msgstr "O valor é unha matriz con %d elementos:"
 
-#: ../xfconf-query/main.c:402
+#: ../blconf-query/main.c:402
 #, c-format
 msgid ""
 "Property \"%s\" does not exist on channel \"%s\". If a new property should "
 "be created, use the --create option"
 msgstr "A propiedade «%s» non existe na canle «%s». Se se debe crearse unha nova propiedade use a opción --create"
 
-#: ../xfconf-query/main.c:410
+#: ../blconf-query/main.c:410
 msgid "When creating a new property, the value type must be specified"
 msgstr "Cando se crea unha nova propiedade débese especificar o tipo do valor"
 
-#: ../xfconf-query/main.c:420
+#: ../blconf-query/main.c:420
 msgid "Failed to get the existing type for the value"
 msgstr "Non foi posíbel obter o tipo do valor"
 
-#: ../xfconf-query/main.c:438
+#: ../blconf-query/main.c:438
 msgid "Unable to determine the type of the value"
 msgstr "Non foi posíbel determinar o tipo do valor"
 
-#: ../xfconf-query/main.c:444
+#: ../blconf-query/main.c:444
 msgid "A value type must be specified to change an array into a single value"
 msgstr "Débese especificar un tipo de valor para converter unha matriz nun valor único"
 
-#: ../xfconf-query/main.c:454 ../xfconf-query/main.c:515
+#: ../blconf-query/main.c:454 ../blconf-query/main.c:515
 #, c-format
 msgid "Unable to convert \"%s\" to type \"%s\""
 msgstr "Non foi posíbel converter «%s» ao tipo «%s»"
 
-#: ../xfconf-query/main.c:486
+#: ../blconf-query/main.c:486
 #, c-format
 msgid "There are %d new values, but only %d types could be determined"
 msgstr "Hai %d valores novos, pero só se poden determinar %d tipos"
 
-#: ../xfconf-query/main.c:507
+#: ../blconf-query/main.c:507
 #, c-format
 msgid "Unable to determine type of value at index %d"
 msgstr "Non foi posíbel determinar o tipo do valor da posición %d"
 
-#: ../xfconf-query/main.c:557
+#: ../blconf-query/main.c:557
 #, c-format
 msgid "Channel \"%s\" contains no properties"
 msgstr "A canle «%s» non contén propiedades"

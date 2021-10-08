@@ -1,0 +1,82 @@
+<!-- ##### SECTION Title ##### -->
+Blconf-GObject Binding
+
+<!-- ##### SECTION Short_Description ##### -->
+Functions to bind Blconf properties to GObject properties
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+Often it may be useful to bind an Blconf property to a GObject property.
+Settings dialogs often display the current value of an Blconf property,
+and a user may edit the value to change the value in the Blconf store.
+If the Blconf property changes outside the settings dialog, the user will
+usually want to see the settings dialog automatically update to reflect
+the new value.
+
+With a single line of code, Blconf's binding functionality can automate
+all this.
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION blconf_g_property_bind ##### -->
+<para>
+
+</para>
+
+@channel: 
+@blconf_property: 
+@blconf_property_type: 
+@object: 
+@object_property: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_g_property_bind_gdkcolor ##### -->
+<para>
+
+</para>
+
+@channel: 
+@blconf_property: 
+@object: 
+@object_property: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_g_property_unbind ##### -->
+<para>
+
+</para>
+
+@id: 
+
+
+<!-- ##### FUNCTION blconf_g_property_unbind_by_property ##### -->
+<para>
+
+</para>
+
+@channel: 
+@blconf_property: 
+@object: 
+@object_property: 
+
+
+<!-- ##### FUNCTION blconf_g_property_unbind_all ##### -->
+<para>
+
+</para>
+
+@channel_or_object: 
+
+

@@ -1,5 +1,5 @@
 /*
- *  xfconf
+ *  blconf
  *
  *  Copyright (c) 2009 Nick Schermer <nick@xfce.org>
  *
@@ -118,81 +118,81 @@ int
 main(int argc,
      char **argv)
 {
-    XfconfChannel *channel;
+    BlconfChannel *channel;
     GObject *object;
     gulong id;
     gboolean initial_property_was_set;
     gboolean property_was_changed;
 
-    if(!xfconf_tests_start())
+    if(!blconf_tests_start())
         return 1;
 
-    channel = xfconf_channel_new(TEST_CHANNEL_NAME);
+    channel = blconf_channel_new(TEST_CHANNEL_NAME);
 
     {
-        TEST_OPERATION(xfconf_channel_set_bool(channel, "/bindings/test", TRUE));
+        TEST_OPERATION(blconf_channel_set_bool(channel, "/bindings/test", TRUE));
 
         object = g_object_new(test_object_get_type(), NULL);
 
         /* set if we set the property when connecting the binding */
         was_set = FALSE;
-        id = xfconf_g_property_bind(channel, "/bindings/test",
+        id = blconf_g_property_bind(channel, "/bindings/test",
                                     G_TYPE_BOOLEAN, object, "test");
         initial_property_was_set = was_set;
         TEST_OPERATION(initial_property_was_set);
 
         /* change channel property, see if binding works */
         was_set = FALSE;
-        xfconf_channel_set_bool(channel, "/bindings/test", FALSE);
+        blconf_channel_set_bool(channel, "/bindings/test", FALSE);
         property_was_changed = was_set;
         TEST_OPERATION(property_was_changed);
 
         /* unbind, object should not get the new channel value */
-        xfconf_g_property_unbind(id);
+        blconf_g_property_unbind(id);
         was_set = FALSE;
-        xfconf_channel_set_bool(channel, "/bindings/test", TRUE);
+        blconf_channel_set_bool(channel, "/bindings/test", TRUE);
         property_was_changed = was_set;
         TEST_OPERATION(!property_was_changed);
 
         /* reconnect binding a couple of times */
-        xfconf_g_property_bind(channel, "/bindings/test1",
+        blconf_g_property_bind(channel, "/bindings/test1",
                                G_TYPE_BOOLEAN, object, "test");
-        xfconf_g_property_bind(channel, "/bindings/test2",
+        blconf_g_property_bind(channel, "/bindings/test2",
                                G_TYPE_BOOLEAN, object, "test");
-        xfconf_g_property_bind(channel, "/bindings/test3",
+        blconf_g_property_bind(channel, "/bindings/test3",
                                G_TYPE_BOOLEAN, object, "test");
 
         /* test unbind all on object */
-        xfconf_g_property_unbind_all(object);
+        blconf_g_property_unbind_all(object);
         was_set = FALSE;
-        xfconf_channel_set_bool(channel, "/bindings/test", FALSE);
+        blconf_channel_set_bool(channel, "/bindings/test", FALSE);
         property_was_changed = was_set;
         TEST_OPERATION(!property_was_changed);
 
         /* reconnect binding a couple of times */
-        xfconf_g_property_bind(channel, "/bindings/test1",
+        blconf_g_property_bind(channel, "/bindings/test1",
                                G_TYPE_BOOLEAN, object, "test");
-        xfconf_g_property_bind(channel, "/bindings/test2",
+        blconf_g_property_bind(channel, "/bindings/test2",
                                G_TYPE_BOOLEAN, object, "test");
-        xfconf_g_property_bind(channel, "/bindings/test3",
+        blconf_g_property_bind(channel, "/bindings/test3",
                                G_TYPE_BOOLEAN, object, "test");
 
         /* test unbind all on channel */
-        xfconf_g_property_unbind_all(channel);
+        blconf_g_property_unbind_all(channel);
         was_set = FALSE;
-        xfconf_channel_set_bool(channel, "/bindings/test", TRUE);
+        blconf_channel_set_bool(channel, "/bindings/test", TRUE);
         property_was_changed = was_set;
         TEST_OPERATION(!property_was_changed);
 
         /* reconnect */
-        xfconf_g_property_bind(channel, "/bindings/test",
+        blconf_g_property_bind(channel, "/bindings/test",
                                G_TYPE_BOOLEAN, object, "test");
 
         /* unbind property by name */
-        xfconf_g_property_unbind_by_property(channel, "/bindings/test",
+        blconf_g_property_unbind_by_property(channel, "/bindings/test",
                                              object, "test");
         was_set = FALSE;
-        xfconf_channel_set_bool(channel, "/bindings/test", FALSE);
+        blconf_channel_set_bool(channel, "/bindings/test", FALSE);
         property_was_changed = was_set;
         TEST_OPERATION(!property_was_changed);
 
@@ -201,7 +201,7 @@ main(int argc,
 
     g_object_unref(G_OBJECT(channel));
 
-    xfconf_tests_end();
+    blconf_tests_end();
 
     return 0;
 }

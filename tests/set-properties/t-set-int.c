@@ -1,5 +1,5 @@
 /*
- *  xfconf
+ *  blconf
  *
  *  Copyright (c) 2007 Brian Tarricone <bjt23@cornell.edu>
  *
@@ -23,18 +23,18 @@ int
 main(int argc,
      char **argv)
 {
-    XfconfChannel *channel;
+    BlconfChannel *channel;
     
-    if(!xfconf_tests_start())
+    if(!blconf_tests_start())
         return 1;
     
-    channel = xfconf_channel_new(TEST_CHANNEL_NAME);
+    channel = blconf_channel_new(TEST_CHANNEL_NAME);
     
-    TEST_OPERATION(xfconf_channel_set_int(channel, test_int_property, test_int));
+    TEST_OPERATION(blconf_channel_set_int(channel, test_int_property, test_int));
     
     g_object_unref(G_OBJECT(channel));
     
-    xfconf_tests_end();
+    blconf_tests_end();
     
     return 0;
 }

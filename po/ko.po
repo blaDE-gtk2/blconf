@@ -6,95 +6,95 @@
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2011-2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfconf\n"
+"Project-Id-Version: Blconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-27 18:32+0200\n"
 "PO-Revision-Date: 2014-08-02 17:54+0000\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
-"Language-Team: Korean (http://www.transifex.com/projects/p/xfconf/language/ko/)\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/blconf/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../xfconf/xfconf-cache.c:897
+#: ../blconf/blconf-cache.c:897
 #, c-format
 msgid "Failed to make ResetProperty DBus call"
 msgstr "ResetProperty DBus 호출을 만드는데 실패했습니다"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:277
+#: ../blconfd/blconf-backend-perchannel-xml.c:277
 #, c-format
 msgid "Unable to create configuration directory \"%s\""
 msgstr "환경설정 디렉터리 \"%s\"을(를) 만들 수 없습니다"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:322
-#: ../xfconfd/xfconf-daemon.c:238
+#: ../blconfd/blconf-backend-perchannel-xml.c:322
+#: ../blconfd/blconf-daemon.c:238
 #, c-format
 msgid "Permission denied while modifying property \"%s\" on channel \"%s\""
 msgstr "\"%s\" 프로퍼티를 \"%s\" 채널에서 수정하는 동안 권한을 거부했습니다"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:387
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:469
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:634
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:654 ../xfconf-query/main.c:344
+#: ../blconfd/blconf-backend-perchannel-xml.c:387
+#: ../blconfd/blconf-backend-perchannel-xml.c:469
+#: ../blconfd/blconf-backend-perchannel-xml.c:634
+#: ../blconfd/blconf-backend-perchannel-xml.c:654 ../blconf-query/main.c:344
 #, c-format
 msgid "Property \"%s\" does not exist on channel \"%s\""
 msgstr "\"%s\" 프로퍼티는 \"%s\" 채널에 존재하지 않습니다"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:601
+#: ../blconfd/blconf-backend-perchannel-xml.c:601
 #, c-format
 msgid "Unable to remove channel \"%s\": %s"
 msgstr "\"%s\"채널을 제거할 수 없습니다: %s"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1298
+#: ../blconfd/blconf-backend-perchannel-xml.c:1298
 #, c-format
 msgid "Invalid type for <property>: \"%s\""
 msgstr "잘못된 <property> 형식입니다: \"%s\""
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1314
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1390
+#: ../blconfd/blconf-backend-perchannel-xml.c:1314
+#: ../blconfd/blconf-backend-perchannel-xml.c:1390
 #, c-format
 msgid "Unable to parse value of type \"%s\" from \"%s\""
 msgstr "\"%s\" 형식의 값을 \"%s\"에서 해석할 수 없습니다"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1370
+#: ../blconfd/blconf-backend-perchannel-xml.c:1370
 #, c-format
 msgid "The type attribute of <value> cannot be an array"
 msgstr "<value>의 속성 형식은 배열이 될 수 없습니다"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1379
+#: ../blconfd/blconf-backend-perchannel-xml.c:1379
 #, c-format
 msgid "Invalid type for <value>: \"%s\""
 msgstr "잘못된 <value> 형식입니다: \"%s\""
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1655
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1904
+#: ../blconfd/blconf-backend-perchannel-xml.c:1655
+#: ../blconfd/blconf-backend-perchannel-xml.c:1904
 #, c-format
 msgid "Channel \"%s\" does not exist"
 msgstr "\"%s\"채널이 존재하지 않습니다"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1962
+#: ../blconfd/blconf-backend-perchannel-xml.c:1962
 #, c-format
 msgid "Unable to write channel \"%s\": %s"
 msgstr "\"%s\" 채널에 기록할 수 없습니다: %s"
 
-#: ../xfconfd/xfconf-backend-factory.c:76
+#: ../blconfd/blconf-backend-factory.c:76
 #, c-format
-msgid "Unable to find Xfconf backend of type \"%s\""
-msgstr "\"%s\" 형식에 대한 xfconf 백엔드를 찾을 수 없습니다"
+msgid "Unable to find Blconf backend of type \"%s\""
+msgstr "\"%s\" 형식에 대한 blconf 백엔드를 찾을 수 없습니다"
 
-#: ../xfconfd/xfconf-backend.c:103
+#: ../blconfd/blconf-backend.c:103
 #, c-format
 msgid "Property names must start with a '/' character"
 msgstr "프로퍼티 이름은 '/' 문자로 시작해야 합니다"
 
-#: ../xfconfd/xfconf-backend.c:112
+#: ../blconfd/blconf-backend.c:112
 #, c-format
 msgid "The root element ('/') is not a valid property name"
 msgstr "루트 요소('/')는 올바른 프로퍼티 이름이 아닙니다"
 
-#: ../xfconfd/xfconf-backend.c:127
+#: ../blconfd/blconf-backend.c:127
 #, c-format
 msgid ""
 "Property names can only include the ASCII characters A-Z, a-z, 0-9, '_', "
@@ -102,237 +102,237 @@ msgid ""
 "separator"
 msgstr "속성 이름에는 A-Z, a-z, 0-9, '{', '}', '|', ']', '[', ':', ',', '.', '_', '<', '>' 아스키 문자만 넣을 수 있으며 '/' 문자는 구분자로 넣을 수 있습니다."
 
-#: ../xfconfd/xfconf-backend.c:136
+#: ../blconfd/blconf-backend.c:136
 #, c-format
 msgid "Property names cannot have two or more consecutive '/' characters"
 msgstr "프로퍼티 이름은 둘 이상의 연속적인 '/' 문자를 가질 수 없습니다"
 
-#: ../xfconfd/xfconf-backend.c:147
+#: ../blconfd/blconf-backend.c:147
 #, c-format
 msgid "Property names cannot end with a '/' character"
 msgstr "프로퍼티 이름은 '/' 문자로 끝날 수 없습니다"
 
-#: ../xfconfd/xfconf-backend.c:164
+#: ../blconfd/blconf-backend.c:164
 #, c-format
 msgid "Channel name cannot be an empty string"
 msgstr "채널 이름은 빈 문자열이 될 수 없습니다"
 
-#: ../xfconfd/xfconf-backend.c:179
+#: ../blconfd/blconf-backend.c:179
 #, c-format
 msgid ""
 "Channel names can only include the ASCII characters A-Z, a-z, 0-9, '{', '}',"
 " '|', ']', '[', ':', ',', '.', '_', and '-'"
 msgstr "채널 이름은 A-Z, a-z, 0-9, '{', '}', '|', ']', '[', ':', ',', '.', '_', '-' 아스키 문자만 넣을 수 있습니다"
 
-#: ../xfconfd/xfconf-backend.c:401
+#: ../blconfd/blconf-backend.c:401
 #, c-format
 msgid ""
 "The property name can only be empty or \"/\" if a recursive reset was "
 "specified"
 msgstr "프로퍼티 이름은 재귀적 리셋을 정의했을 경우 비우거나 \"/\"만 쓸 수 있습니다"
 
-#: ../xfconfd/main.c:134
-msgid "Prints the xfconfd version."
-msgstr "xfconfd 버전을 출력합니다."
+#: ../blconfd/main.c:134
+msgid "Prints the blconfd version."
+msgstr "blconfd 버전을 출력합니다."
 
-#: ../xfconfd/main.c:136
+#: ../blconfd/main.c:136
 msgid ""
 "Configuration backends to use.  The first backend specified is opened "
 "read/write; the others, read-only."
 msgstr "사용하기 위한 환경설정 백엔드입니다. 정의된 첫번째 백엔드는 읽기/쓰기로 열려 있습니다. 이에 반해 다른 요소는 읽기전용입니다."
 
-#: ../xfconfd/main.c:139
+#: ../blconfd/main.c:139
 msgid "Fork into background after starting; only useful for testing purposes"
 msgstr "시작한 후 백그라운드로 쪼갭니다. 이것은 시험 목적일 경우에만 유용합니다"
 
-#: ../xfconfd/main.c:159
+#: ../blconfd/main.c:159
 msgid "Xfce Configuration Daemon"
 msgstr "Xfce 환경설정 데몬"
 
-#: ../xfconfd/main.c:168
+#: ../blconfd/main.c:168
 msgid "Xfce configuration daemon"
 msgstr "Xfce 환경설정 데몬"
 
-#: ../xfconfd/main.c:170
+#: ../blconfd/main.c:170
 msgid "Report bugs to http://bugs.xfce.org/\n"
 msgstr "http://bugs.xfce.org로 버그를 알려주십시오\n"
 
-#: ../xfconfd/main.c:173
+#: ../blconfd/main.c:173
 #, c-format
 msgid "Error parsing options: %s\n"
 msgstr "옵션 해석 오류: %s\n"
 
-#: ../xfconfd/xfconf-daemon.c:482
+#: ../blconfd/blconf-daemon.c:482
 #, c-format
-msgid "Another Xfconf daemon is already running"
-msgstr "다른 xfconf 데몬이 이미 실행중입니다"
+msgid "Another Blconf daemon is already running"
+msgstr "다른 blconf 데몬이 이미 실행중입니다"
 
-#: ../xfconfd/xfconf-daemon.c:517
+#: ../blconfd/blconf-daemon.c:517
 #, c-format
 msgid "No backends could be started"
 msgstr "어떤 백엔드도 시작할 수 없었습니다"
 
-#: ../xfconf-query/main.c:90 ../xfconf-query/main.c:95
+#: ../blconf-query/main.c:90 ../blconf-query/main.c:95
 msgid "set"
 msgstr "설정"
 
-#: ../xfconf-query/main.c:100
+#: ../blconf-query/main.c:100
 msgid "reset"
 msgstr "취소"
 
-#: ../xfconf-query/main.c:176
+#: ../blconf-query/main.c:176
 msgid "Version information"
 msgstr "버전 정보"
 
-#: ../xfconf-query/main.c:180
+#: ../blconf-query/main.c:180
 msgid "The channel to query/modify"
 msgstr "요청/수정을 위한 채널"
 
-#: ../xfconf-query/main.c:184
+#: ../blconf-query/main.c:184
 msgid "The property to query/modify"
 msgstr "요청/수정을 위한 프로퍼티"
 
-#: ../xfconf-query/main.c:188
+#: ../blconf-query/main.c:188
 msgid "The new value to set for the property"
 msgstr "프로퍼티를 설정할 새 값"
 
-#: ../xfconf-query/main.c:192
+#: ../blconf-query/main.c:192
 msgid "List properties (or channels if -c is not specified)"
 msgstr "목록 프로퍼티(또는 -c를 정의했을 경우 채널)"
 
-#: ../xfconf-query/main.c:196
+#: ../blconf-query/main.c:196
 msgid "Verbose output"
 msgstr "상세 출력"
 
-#: ../xfconf-query/main.c:200
+#: ../blconf-query/main.c:200
 msgid "Create a new property if it does not already exist"
 msgstr "프로퍼티가 이미 존재하지 않는 경우 새로운 프로퍼티를 만들기"
 
-#: ../xfconf-query/main.c:204
+#: ../blconf-query/main.c:204
 msgid "Specify the property value type"
 msgstr "프로퍼티 값 형식을 정의"
 
-#: ../xfconf-query/main.c:208
+#: ../blconf-query/main.c:208
 msgid "Reset property"
 msgstr "프로퍼티 재설정"
 
-#: ../xfconf-query/main.c:212
+#: ../blconf-query/main.c:212
 msgid "Recursive (use with -r)"
 msgstr "재귀적 실행 (-r 과 함께 사용)"
 
-#: ../xfconf-query/main.c:216
+#: ../blconf-query/main.c:216
 msgid "Force array even if only one element"
 msgstr "단 한 가지의 요소만 있을 경우 배열로 강제"
 
-#: ../xfconf-query/main.c:220
+#: ../blconf-query/main.c:220
 msgid "Invert an existing boolean property"
 msgstr "기존 부울린 속성 반전"
 
-#: ../xfconf-query/main.c:224
+#: ../blconf-query/main.c:224
 msgid "Monitor a channel for property changes"
 msgstr "프로퍼티를 바꾸기 위한 채널 감시"
 
-#: ../xfconf-query/main.c:249
+#: ../blconf-query/main.c:249
 #, c-format
-msgid "Failed to init libxfconf: %s"
-msgstr "libxfconf를 초기화 하는데 실패했습니다: %s"
+msgid "Failed to init libblconf: %s"
+msgstr "libblconf를 초기화 하는데 실패했습니다: %s"
 
-#: ../xfconf-query/main.c:254
-msgid "- Xfconf commandline utility"
-msgstr "- xfconf 명령줄 유틸리티"
+#: ../blconf-query/main.c:254
+msgid "- Blconf commandline utility"
+msgstr "- blconf 명령줄 유틸리티"
 
-#: ../xfconf-query/main.c:259
+#: ../blconf-query/main.c:259
 #, c-format
 msgid "Option parsing failed: %s"
 msgstr "옵션을 해석하는데 실패: %s"
 
-#: ../xfconf-query/main.c:269
+#: ../blconf-query/main.c:269
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce 개발 팀. All rights reserved."
 
-#: ../xfconf-query/main.c:270
+#: ../blconf-query/main.c:270
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "<%s>로 버그를 알려주십시오."
 
-#: ../xfconf-query/main.c:282
+#: ../blconf-query/main.c:282
 msgid "Channels:"
 msgstr "채널:"
 
-#: ../xfconf-query/main.c:298
+#: ../blconf-query/main.c:298
 msgid "No property specified"
 msgstr "지정된 속성이 없습니다"
 
-#: ../xfconf-query/main.c:304
+#: ../blconf-query/main.c:304
 msgid "--create and --reset options can not be used together"
 msgstr "--create와 --reset 옵션은 함께 사용할 수 없습니다"
 
-#: ../xfconf-query/main.c:310
+#: ../blconf-query/main.c:310
 msgid "--create and --reset options can not be used together with --list"
 msgstr "--create와 --reset 옵션은 --list와 사용할 수 없습니다"
 
-#: ../xfconf-query/main.c:322
+#: ../blconf-query/main.c:322
 #, c-format
 msgid "Start monitoring channel \"%s\":"
 msgstr "\"%s\" 채널 감시 시작:"
 
-#: ../xfconf-query/main.c:356 ../xfconf-query/main.c:461
-#: ../xfconf-query/main.c:530
+#: ../blconf-query/main.c:356 ../blconf-query/main.c:461
+#: ../blconf-query/main.c:530
 msgid "Failed to set property"
 msgstr "프로퍼티를 설정하는데 실패했습니다"
 
-#: ../xfconf-query/main.c:360
+#: ../blconf-query/main.c:360
 msgid "--toggle only works with boolean values"
 msgstr "--toggle은 부울린 값에만 동작합니다"
 
-#: ../xfconf-query/main.c:369 ../xfconf-query/main.c:388
+#: ../blconf-query/main.c:369 ../blconf-query/main.c:388
 msgid "(unknown)"
 msgstr "(알 수 없음)"
 
-#: ../xfconf-query/main.c:378
+#: ../blconf-query/main.c:378
 #, c-format
 msgid "Value is an array with %d items:"
 msgstr "값은 항목 %d개를 가진 배열입니다:"
 
-#: ../xfconf-query/main.c:402
+#: ../blconf-query/main.c:402
 #, c-format
 msgid ""
 "Property \"%s\" does not exist on channel \"%s\". If a new property should "
 "be created, use the --create option"
 msgstr "\"%s\" 프로퍼티는 \"%s\" 채널에 존재하지 않습니다. 새로운 프로퍼티를 만들어야 한다면 --create 옵션을 사용하십시오"
 
-#: ../xfconf-query/main.c:410
+#: ../blconf-query/main.c:410
 msgid "When creating a new property, the value type must be specified"
 msgstr "새로운 프로퍼티를 생성할 때, 값 형식을 정의해야 합니다"
 
-#: ../xfconf-query/main.c:420
+#: ../blconf-query/main.c:420
 msgid "Failed to get the existing type for the value"
 msgstr "값의 기존 형식을 가져오는데 실패했습니다"
 
-#: ../xfconf-query/main.c:438
+#: ../blconf-query/main.c:438
 msgid "Unable to determine the type of the value"
 msgstr "값 형식을 결정할 수 없습니다"
 
-#: ../xfconf-query/main.c:444
+#: ../blconf-query/main.c:444
 msgid "A value type must be specified to change an array into a single value"
 msgstr "값 형식은 배열에서 단일 값으로 바꾸려면 정의해야 합니다"
 
-#: ../xfconf-query/main.c:454 ../xfconf-query/main.c:515
+#: ../blconf-query/main.c:454 ../blconf-query/main.c:515
 #, c-format
 msgid "Unable to convert \"%s\" to type \"%s\""
 msgstr "\"%s\"을(를) \"%s\" 형식으로 변환할 수 없습니다"
 
-#: ../xfconf-query/main.c:486
+#: ../blconf-query/main.c:486
 #, c-format
 msgid "There are %d new values, but only %d types could be determined"
 msgstr "새로운 값 %d개가 있지만, %d 형식으로만 결정할 수 있었습니다"
 
-#: ../xfconf-query/main.c:507
+#: ../blconf-query/main.c:507
 #, c-format
 msgid "Unable to determine type of value at index %d"
 msgstr "인덱스 %d번의 값 형식을 결정할 수 없습니다"
 
-#: ../xfconf-query/main.c:557
+#: ../blconf-query/main.c:557
 #, c-format
 msgid "Channel \"%s\" contains no properties"
 msgstr "\"%s\" 채널에 어떠한 프로퍼티도 포함하지 않았습니다"

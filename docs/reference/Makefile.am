@@ -3,13 +3,13 @@
 AUTOMAKE_OPTIONS = 1.8
 
 # The name of the module.
-DOC_MODULE=xfconf
+DOC_MODULE=blconf
 
 # The top-level SGML file.
 DOC_MAIN_SGML_FILE=$(DOC_MODULE)-docs.sgml
 
 # Extra options to supply to gtkdoc-scan
-SCAN_OPTIONS=--deprecated-guards="XFCONF_DISABLE_DEPRECATED"
+SCAN_OPTIONS=--deprecated-guards="BLCONF_DISABLE_DEPRECATED"
 
 # The directory containing the source code. Relative to $(srcdir)
 DOC_SOURCE_DIR=../..
@@ -22,23 +22,23 @@ FIXXREF_OPTIONS=--module=$(DOC_MODULE)
 
 # Used for dependencies
 HFILE_GLOB = \
-	$(top_srcdir)/xfconf/*.h \
-	$(top_srcdir)/xfconfd/*.h
+	$(top_srcdir)/blconf/*.h \
+	$(top_srcdir)/blconfd/*.h
 CFILE_GLOB = \
-	$(top_srcdir)/xfconf/*.c \
-	$(top_srcdir)/xfconfd/*.c \
-	$(top_srcdir)/common/xfconf-errors.c
+	$(top_srcdir)/blconf/*.c \
+	$(top_srcdir)/blconfd/*.c \
+	$(top_srcdir)/common/blconf-errors.c
 
 # Header files to ignore when scanning
 IGNORE_HFILES= \
 	config.h \
-	xfconf-backend-factory.h \
-	xfconf-backend-perchannel-xml.h \
-	xfconf-daemon.h \
-	xfconf-dbus-bindings.h \
-	xfconf-marshal.h \
-	xfconf-private.h \
-	xfconfd-dbus-server.h
+	blconf-backend-factory.h \
+	blconf-backend-perchannel-xml.h \
+	blconf-daemon.h \
+	blconf-dbus-bindings.h \
+	blconf-marshal.h \
+	blconf-private.h \
+	blconfd-dbus-server.h
 
 # Extra files to add when scanning (relative to $srcdir)
 EXTRA_HFILES=
@@ -53,17 +53,18 @@ content_files = \
 # CFLAGS and LDFLAGS for compiling scan program. Only needed
 # if $(DOC_MODULE).types is non-empty.
 AM_CPPFLAGS = \
+	-DGLIB_DISABLE_DEPRECATION_WARNINGS \
 	-I$(top_srcdir) \
 	-I$(top_builddir) \
 	$(GLIB_CFLAGS) \
-	$(LIBXFCE4UTIL_CFLAGS) \
+	$(LIBBLADEUTIL_CFLAGS) \
 	$(DBUS_CFLAGS) \
 	$(DBUS_GLIB_CFLAGS) \
 	$(GTK_DOC_EXTRA_CFLAGS)
 
 GTKDOC_LIBS = \
-	$(top_builddir)/xfconf/libxfconf-$(LIBXFCONF_VERSION_API).la \
-	$(top_builddir)/xfconfd/xfconfd-xfconf-backend.o \
+	$(top_builddir)/blconf/libblconf-$(LIBBLCONF_VERSION_API).la \
+	$(top_builddir)/blconfd/blconfd-blconf-backend.o \
 	$(GLIB_LIBS) \
 	$(GOBJECT_LIBS)
 

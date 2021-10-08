@@ -1,0 +1,111 @@
+/*
+ *  blconf
+ *
+ *  Copyright (c) 2007 Brian Tarricone <bjt23@cornell.edu>
+ *
+ *  This library is free software; you can redistribute it and/or
+ *  modify it under the terms of the GNU Lesser General Public
+ *  License as published by the Free Software Foundation; version 2
+ *  of the License ONLY.
+ *
+ *  This library is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *  Lesser General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Lesser General Public
+ *  License along with this library; if not, write to the Free Software
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+ */
+
+#ifdef ALL_FILES
+#define IN_HEADER(x) 1
+#define IN_SOURCE(x) 1
+#endif
+
+/* blconf.c */
+#if IN_HEADER(__BLCONF_H__)
+#if IN_SOURCE(__BLCONF_C__)
+blconf_init
+blconf_shutdown
+blconf_named_struct_register
+blconf_array_free
+#endif
+#endif
+
+/* blconf-errors.h */
+#if IN_HEADER(__BLCONF_ERRORS_H__)
+#if IN_SOURCE(__BLCONF_ERRORS_C__)
+blconf_error_get_type G_GNUC_CONST
+blconf_get_error_quark
+#endif
+#endif
+
+/* blconf-types.h */
+#if IN_HEADER(__BLCONF_TYPES_H__)
+#if IN_SOURCE(__BLCONF_TYPES_C__)
+blconf_uint16_get_type G_GNUC_CONST
+blconf_g_value_get_uint16
+blconf_g_value_set_uint16
+blconf_int16_get_type G_GNUC_CONST
+blconf_g_value_get_int16
+blconf_g_value_set_int16
+#endif
+#endif
+
+/* blconf-channel.h */
+#if IN_HEADER(__BLCONF_CHANNEL_H__)
+#if IN_SOURCE(__BLCONF_CHANNEL_C__)
+blconf_channel_get_type G_GNUC_CONST
+blconf_channel_get
+blconf_channel_new
+blconf_channel_new_with_property_base
+blconf_channel_has_property
+blconf_channel_is_property_locked
+blconf_channel_reset_property
+blconf_channel_get_properties
+blconf_channel_get_string
+blconf_channel_set_string
+blconf_channel_get_int
+blconf_channel_set_int
+blconf_channel_get_uint
+blconf_channel_set_uint
+blconf_channel_get_uint64
+blconf_channel_set_uint64
+blconf_channel_get_double
+blconf_channel_set_double
+blconf_channel_get_bool
+blconf_channel_set_bool
+blconf_channel_get_string_list
+blconf_channel_set_string_list
+blconf_channel_get_property
+blconf_channel_set_property
+blconf_channel_get_array
+blconf_channel_get_array_valist
+blconf_channel_get_arrayv
+blconf_channel_set_array
+blconf_channel_set_array_valist
+blconf_channel_set_arrayv
+blconf_channel_get_named_struct
+blconf_channel_set_named_struct
+blconf_channel_get_struct
+blconf_channel_get_struct_valist
+blconf_channel_get_structv
+blconf_channel_set_struct
+blconf_channel_set_struct_valist
+blconf_channel_set_structv
+blconf_list_channels
+#endif
+#endif
+
+/* blconf-binding.h */
+#if IN_HEADER(__BLCONF_BINDING_H__)
+#if IN_SOURCE(__BLCONF_BINDING_C__)
+blconf_g_property_bind
+blconf_g_property_unbind
+blconf_g_property_unbind_by_property
+blconf_g_property_unbind_all
+blconf_g_property_bind_gdkcolor
+blconf_g_property_bind_gdkrgba
+#endif
+#endif

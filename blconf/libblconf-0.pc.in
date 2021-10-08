@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+libblconf_api_version=@LIBBLCONF_VERSION_API@
+
+Name: @PACKAGE_TARNAME@
+Description: Configuration library for Xfce
+Requires: gobject-2.0 dbus-1 dbus-glib-1
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lblconf-${libblconf_api_version}
+Cflags: -I${includedir}/xfce4/blconf-${libblconf_api_version}

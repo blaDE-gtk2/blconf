@@ -1,0 +1,62 @@
+<!-- ##### SECTION Title ##### -->
+Blconf Library Core
+
+<!-- ##### SECTION Short_Description ##### -->
+Init routines and core functionality for libblconf
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+Before libblconf can be used, it must be initialized by calling
+blconf_init().  To free resources used by the library, call
+blconf_shutdown().  These calls are "recursive": multiple calls to
+blconf_init() are allowed, but each call must be matched by a
+separate call to blconf_shutdown() to really free the library's
+resources.
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION blconf_init ##### -->
+<para>
+
+</para>
+
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_shutdown ##### -->
+<para>
+
+</para>
+
+@void: 
+
+
+<!-- ##### FUNCTION blconf_named_struct_register ##### -->
+<para>
+
+</para>
+
+@struct_name: 
+@n_members: 
+@member_types: 
+
+
+<!-- ##### FUNCTION blconf_array_free ##### -->
+<para>
+
+</para>
+
+@arr: 
+
+

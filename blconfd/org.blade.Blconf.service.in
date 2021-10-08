@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.blade.Blconf
+Exec=@HELPERDIR@/xfce4/blconf/blconfd

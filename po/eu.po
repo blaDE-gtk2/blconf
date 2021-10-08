@@ -7,95 +7,95 @@
 # Piarres Beobide <pi+debian@beobide.net>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfconf\n"
+"Project-Id-Version: Blconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-27 18:32+0200\n"
 "PO-Revision-Date: 2016-02-08 15:49+0000\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
-"Language-Team: Basque (http://www.transifex.com/xfce/xfconf/language/eu/)\n"
+"Language-Team: Basque (http://www.transifex.com/xfce/blconf/language/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../xfconf/xfconf-cache.c:897
+#: ../blconf/blconf-cache.c:897
 #, c-format
 msgid "Failed to make ResetProperty DBus call"
 msgstr "Huts ResetProperty DBus deia egitean"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:277
+#: ../blconfd/blconf-backend-perchannel-xml.c:277
 #, c-format
 msgid "Unable to create configuration directory \"%s\""
 msgstr "Ezin da \"%s\" konfigurazio direktorioa sortu"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:322
-#: ../xfconfd/xfconf-daemon.c:238
+#: ../blconfd/blconf-backend-perchannel-xml.c:322
+#: ../blconfd/blconf-daemon.c:238
 #, c-format
 msgid "Permission denied while modifying property \"%s\" on channel \"%s\""
 msgstr "Baimena  ukatua \"%s\" propietatea aldatzeko \"%s\" kanalean"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:387
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:469
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:634
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:654 ../xfconf-query/main.c:344
+#: ../blconfd/blconf-backend-perchannel-xml.c:387
+#: ../blconfd/blconf-backend-perchannel-xml.c:469
+#: ../blconfd/blconf-backend-perchannel-xml.c:634
+#: ../blconfd/blconf-backend-perchannel-xml.c:654 ../blconf-query/main.c:344
 #, c-format
 msgid "Property \"%s\" does not exist on channel \"%s\""
 msgstr "\"%s\" propietatea ez dago \"%s\" kanalean"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:601
+#: ../blconfd/blconf-backend-perchannel-xml.c:601
 #, c-format
 msgid "Unable to remove channel \"%s\": %s"
 msgstr "Ezinda \"%s\" kanala kendu: %s"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1298
+#: ../blconfd/blconf-backend-perchannel-xml.c:1298
 #, c-format
 msgid "Invalid type for <property>: \"%s\""
 msgstr "<propietate> mota baliogabea: \"%s\""
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1314
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1390
+#: ../blconfd/blconf-backend-perchannel-xml.c:1314
+#: ../blconfd/blconf-backend-perchannel-xml.c:1390
 #, c-format
 msgid "Unable to parse value of type \"%s\" from \"%s\""
 msgstr "Ezin da \"%s\" balioa \"%s\"-tik analizatu"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1370
+#: ../blconfd/blconf-backend-perchannel-xml.c:1370
 #, c-format
 msgid "The type attribute of <value> cannot be an array"
 msgstr "<balio> atributu mota ezin da array bat izan"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1379
+#: ../blconfd/blconf-backend-perchannel-xml.c:1379
 #, c-format
 msgid "Invalid type for <value>: \"%s\""
 msgstr "<balio> mota baliogabea: \"%s\""
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1655
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1904
+#: ../blconfd/blconf-backend-perchannel-xml.c:1655
+#: ../blconfd/blconf-backend-perchannel-xml.c:1904
 #, c-format
 msgid "Channel \"%s\" does not exist"
 msgstr "Ez dago \"%s\" kanalik"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1962
+#: ../blconfd/blconf-backend-perchannel-xml.c:1962
 #, c-format
 msgid "Unable to write channel \"%s\": %s"
 msgstr "Ezin da \"%s\" kanalean idatzi: %s"
 
-#: ../xfconfd/xfconf-backend-factory.c:76
+#: ../blconfd/blconf-backend-factory.c:76
 #, c-format
-msgid "Unable to find Xfconf backend of type \"%s\""
-msgstr "Ezin da \"%s\" motako Xfconf interfazerik aurkitu"
+msgid "Unable to find Blconf backend of type \"%s\""
+msgstr "Ezin da \"%s\" motako Blconf interfazerik aurkitu"
 
-#: ../xfconfd/xfconf-backend.c:103
+#: ../blconfd/blconf-backend.c:103
 #, c-format
 msgid "Property names must start with a '/' character"
 msgstr "Propietate izenak 'karaktereaz' ikurraz hasi behar dira"
 
-#: ../xfconfd/xfconf-backend.c:112
+#: ../blconfd/blconf-backend.c:112
 #, c-format
 msgid "The root element ('/') is not a valid property name"
 msgstr "Erro elementua ('/') ez da baliozko propietate izen bat"
 
-#: ../xfconfd/xfconf-backend.c:127
+#: ../blconfd/blconf-backend.c:127
 #, c-format
 msgid ""
 "Property names can only include the ASCII characters A-Z, a-z, 0-9, '_', "
@@ -103,237 +103,237 @@ msgid ""
 "separator"
 msgstr ""
 
-#: ../xfconfd/xfconf-backend.c:136
+#: ../blconfd/blconf-backend.c:136
 #, c-format
 msgid "Property names cannot have two or more consecutive '/' characters"
 msgstr "Propietate izenak ezin dut bi '/' karaktere edo jarraian gehiago izan"
 
-#: ../xfconfd/xfconf-backend.c:147
+#: ../blconfd/blconf-backend.c:147
 #, c-format
 msgid "Property names cannot end with a '/' character"
 msgstr "Propietate izenak ezin dira '/'karaktereaz amaitu"
 
-#: ../xfconfd/xfconf-backend.c:164
+#: ../blconfd/blconf-backend.c:164
 #, c-format
 msgid "Channel name cannot be an empty string"
 msgstr "Kanal izena ezin da kate huts bat izan"
 
-#: ../xfconfd/xfconf-backend.c:179
+#: ../blconfd/blconf-backend.c:179
 #, c-format
 msgid ""
 "Channel names can only include the ASCII characters A-Z, a-z, 0-9, '{', '}',"
 " '|', ']', '[', ':', ',', '.', '_', and '-'"
 msgstr "Kanal izenek ASCII karakterea A-Z, a-z, 0-9, '{', '}', '|', ']', '[', ':', ',', '.', '_', eta '-' bakarrik eduki ditzake"
 
-#: ../xfconfd/xfconf-backend.c:401
+#: ../blconfd/blconf-backend.c:401
 #, c-format
 msgid ""
 "The property name can only be empty or \"/\" if a recursive reset was "
 "specified"
 msgstr "Propietate izena hutsa edo \"/\" bakarrik izan daiteke bakarrik berezarketa errekurtsibo bat zehaztu bada."
 
-#: ../xfconfd/main.c:134
-msgid "Prints the xfconfd version."
-msgstr "xfconfd bertsio inprimatzen du"
+#: ../blconfd/main.c:134
+msgid "Prints the blconfd version."
+msgstr "blconfd bertsio inprimatzen du"
 
-#: ../xfconfd/main.c:136
+#: ../blconfd/main.c:136
 msgid ""
 "Configuration backends to use.  The first backend specified is opened "
 "read/write; the others, read-only."
 msgstr "Erabiliko den konfigurazio interfazea. Zehazten den lehen interfazea irakurketa/idazketa moduan irekiko da, besteak irakurketa soilekoan,"
 
-#: ../xfconfd/main.c:139
+#: ../blconfd/main.c:139
 msgid "Fork into background after starting; only useful for testing purposes"
 msgstr "Banandu atzeko planoan abiarazi hondoren; probetarako bakarrik erabilgarria"
 
-#: ../xfconfd/main.c:159
+#: ../blconfd/main.c:159
 msgid "Xfce Configuration Daemon"
 msgstr "Xfce konfigurazio deabrua"
 
-#: ../xfconfd/main.c:168
+#: ../blconfd/main.c:168
 msgid "Xfce configuration daemon"
 msgstr "Xfce konfigurazio deabrua"
 
-#: ../xfconfd/main.c:170
+#: ../blconfd/main.c:170
 msgid "Report bugs to http://bugs.xfce.org/\n"
 msgstr "Arazoen berri hemen: http://bugs.xfce.org/\n"
 
-#: ../xfconfd/main.c:173
+#: ../blconfd/main.c:173
 #, c-format
 msgid "Error parsing options: %s\n"
 msgstr "Errorea aukerak analizatzean: %s\n"
 
-#: ../xfconfd/xfconf-daemon.c:482
+#: ../blconfd/blconf-daemon.c:482
 #, c-format
-msgid "Another Xfconf daemon is already running"
-msgstr "Beste Xfconf deabru bat abiaraziriik dago dagoeneko"
+msgid "Another Blconf daemon is already running"
+msgstr "Beste Blconf deabru bat abiaraziriik dago dagoeneko"
 
-#: ../xfconfd/xfconf-daemon.c:517
+#: ../blconfd/blconf-daemon.c:517
 #, c-format
 msgid "No backends could be started"
 msgstr "Ezin da interfazerik abiarazi"
 
-#: ../xfconf-query/main.c:90 ../xfconf-query/main.c:95
+#: ../blconf-query/main.c:90 ../blconf-query/main.c:95
 msgid "set"
 msgstr "ezarri"
 
-#: ../xfconf-query/main.c:100
+#: ../blconf-query/main.c:100
 msgid "reset"
 msgstr "berrezarri"
 
-#: ../xfconf-query/main.c:176
+#: ../blconf-query/main.c:176
 msgid "Version information"
 msgstr "Bertsio argibideak"
 
-#: ../xfconf-query/main.c:180
+#: ../blconf-query/main.c:180
 msgid "The channel to query/modify"
 msgstr "Galdezkatu/eraldatzeko kanala"
 
-#: ../xfconf-query/main.c:184
+#: ../blconf-query/main.c:184
 msgid "The property to query/modify"
 msgstr "Galdezkatu/eraldatzeko propietatea"
 
-#: ../xfconf-query/main.c:188
+#: ../blconf-query/main.c:188
 msgid "The new value to set for the property"
 msgstr "Propietatearentzat ezarritako balio berria"
 
-#: ../xfconf-query/main.c:192
+#: ../blconf-query/main.c:192
 msgid "List properties (or channels if -c is not specified)"
 msgstr "Zerrendatu propietateak (edo kanalak -c zehazten ez bada)"
 
-#: ../xfconf-query/main.c:196
+#: ../blconf-query/main.c:196
 msgid "Verbose output"
 msgstr "Irteera luzea"
 
-#: ../xfconf-query/main.c:200
+#: ../blconf-query/main.c:200
 msgid "Create a new property if it does not already exist"
 msgstr "Sortu propietate berri bat berau ez bada existitzen"
 
-#: ../xfconf-query/main.c:204
+#: ../blconf-query/main.c:204
 msgid "Specify the property value type"
 msgstr "Zehatu propietate balio mota"
 
-#: ../xfconf-query/main.c:208
+#: ../blconf-query/main.c:208
 msgid "Reset property"
 msgstr "Berezarri propietatea"
 
-#: ../xfconf-query/main.c:212
+#: ../blconf-query/main.c:212
 msgid "Recursive (use with -r)"
 msgstr "Errekurtsiboa (-r-rekin erabili)"
 
-#: ../xfconf-query/main.c:216
+#: ../blconf-query/main.c:216
 msgid "Force array even if only one element"
 msgstr "Behartu array nahiz elementu bakarra izan"
 
-#: ../xfconf-query/main.c:220
+#: ../blconf-query/main.c:220
 msgid "Invert an existing boolean property"
 msgstr "Alderanztu dagoen propietate boolearra"
 
-#: ../xfconf-query/main.c:224
+#: ../blconf-query/main.c:224
 msgid "Monitor a channel for property changes"
 msgstr "Monitorizatu kanal bat propietate aldaketa bila"
 
-#: ../xfconf-query/main.c:249
+#: ../blconf-query/main.c:249
 #, c-format
-msgid "Failed to init libxfconf: %s"
-msgstr "Huts libxfconf abiaraztean: %s"
+msgid "Failed to init libblconf: %s"
+msgstr "Huts libblconf abiaraztean: %s"
 
-#: ../xfconf-query/main.c:254
-msgid "- Xfconf commandline utility"
-msgstr "- Xfconf komando-lerro lanabesa"
+#: ../blconf-query/main.c:254
+msgid "- Blconf commandline utility"
+msgstr "- Blconf komando-lerro lanabesa"
 
-#: ../xfconf-query/main.c:259
+#: ../blconf-query/main.c:259
 #, c-format
 msgid "Option parsing failed: %s"
 msgstr "Aukera analisiak huts egin du: %s"
 
-#: ../xfconf-query/main.c:269
+#: ../blconf-query/main.c:269
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce garapen taldea. Eskubide guztiak erreserbaturik"
 
-#: ../xfconf-query/main.c:270
+#: ../blconf-query/main.c:270
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Mesedez programa-erroren berri eman: <%s>."
 
-#: ../xfconf-query/main.c:282
+#: ../blconf-query/main.c:282
 msgid "Channels:"
 msgstr "Kateak:"
 
-#: ../xfconf-query/main.c:298
+#: ../blconf-query/main.c:298
 msgid "No property specified"
 msgstr "Ez da propietatea zehaztu"
 
-#: ../xfconf-query/main.c:304
+#: ../blconf-query/main.c:304
 msgid "--create and --reset options can not be used together"
 msgstr "--create eta --reset aukerak ezin dira batera erabili"
 
-#: ../xfconf-query/main.c:310
+#: ../blconf-query/main.c:310
 msgid "--create and --reset options can not be used together with --list"
 msgstr "--create eta --reset aukerak ezin dira --list-ekin batera erabili"
 
-#: ../xfconf-query/main.c:322
+#: ../blconf-query/main.c:322
 #, c-format
 msgid "Start monitoring channel \"%s\":"
 msgstr "Hasi \"%s\" kanala monitorizatzen:"
 
-#: ../xfconf-query/main.c:356 ../xfconf-query/main.c:461
-#: ../xfconf-query/main.c:530
+#: ../blconf-query/main.c:356 ../blconf-query/main.c:461
+#: ../blconf-query/main.c:530
 msgid "Failed to set property"
 msgstr "Huts propietatea ezartzean"
 
-#: ../xfconf-query/main.c:360
+#: ../blconf-query/main.c:360
 msgid "--toggle only works with boolean values"
 msgstr "--toggle balio boolearrekin bakarrik erabili daiteke"
 
-#: ../xfconf-query/main.c:369 ../xfconf-query/main.c:388
+#: ../blconf-query/main.c:369 ../blconf-query/main.c:388
 msgid "(unknown)"
 msgstr "(ezezaguna)"
 
-#: ../xfconf-query/main.c:378
+#: ../blconf-query/main.c:378
 #, c-format
 msgid "Value is an array with %d items:"
 msgstr "Balioa %d elementu dituen array bat da:"
 
-#: ../xfconf-query/main.c:402
+#: ../blconf-query/main.c:402
 #, c-format
 msgid ""
 "Property \"%s\" does not exist on channel \"%s\". If a new property should "
 "be created, use the --create option"
 msgstr "Ez dago \"%s\" propietaterik \"%s\" kanalean. Propietate berri bat\n sortu nahi baduzu, --create aukera erabili"
 
-#: ../xfconf-query/main.c:410
+#: ../blconf-query/main.c:410
 msgid "When creating a new property, the value type must be specified"
 msgstr "Propietate berri bat sortzean balio mota zehaztu behar duzu"
 
-#: ../xfconf-query/main.c:420
+#: ../blconf-query/main.c:420
 msgid "Failed to get the existing type for the value"
 msgstr "Huts balioaren motak eskuratzerakoan"
 
-#: ../xfconf-query/main.c:438
+#: ../blconf-query/main.c:438
 msgid "Unable to determine the type of the value"
 msgstr "Ezin da jakin balioaren mota"
 
-#: ../xfconf-query/main.c:444
+#: ../blconf-query/main.c:444
 msgid "A value type must be specified to change an array into a single value"
 msgstr "Balio mota bar zehaztu behar duzu, array bat balio soil batetara bihurtzeko"
 
-#: ../xfconf-query/main.c:454 ../xfconf-query/main.c:515
+#: ../blconf-query/main.c:454 ../blconf-query/main.c:515
 #, c-format
 msgid "Unable to convert \"%s\" to type \"%s\""
 msgstr "Ezin da\"%s\" \"%s\" motara bihurtu"
 
-#: ../xfconf-query/main.c:486
+#: ../blconf-query/main.c:486
 #, c-format
 msgid "There are %d new values, but only %d types could be determined"
 msgstr "%d balio berri ditu, baina %d mota bakarrik antzeman daitezke"
 
-#: ../xfconf-query/main.c:507
+#: ../blconf-query/main.c:507
 #, c-format
 msgid "Unable to determine type of value at index %d"
 msgstr "Ezin da %d indizeko balioaren mota antzeman"
 
-#: ../xfconf-query/main.c:557
+#: ../blconf-query/main.c:557
 #, c-format
 msgid "Channel \"%s\" contains no properties"
 msgstr "'%s' kanalak ez du propietaterik"

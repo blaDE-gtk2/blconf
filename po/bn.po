@@ -6,7 +6,7 @@
 # Sadia Afroz <sadia@ankur.org.bd>, 2010
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfconf\n"
+"Project-Id-Version: Blconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:48+0200\n"
 "PO-Revision-Date: 2013-11-19 10:53+0000\n"
@@ -18,320 +18,320 @@ msgstr ""
 "Language: bn\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../xfconf/xfconf-cache.c:897
+#: ../blconf/blconf-cache.c:897
 #, c-format
 msgid "Failed to make ResetProperty DBus call"
 msgstr "ResetProperty DBus কল তৈরী করতে ব্যর্থ"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:277
+#: ../blconfd/blconf-backend-perchannel-xml.c:277
 #, c-format
 msgid "Unable to create configuration directory \"%s\""
 msgstr "কনফিগারেশন ডিরেক্টরি \"%s\" তৈরি করতে ব্যর্থ"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:322
-#: ../xfconfd/xfconf-daemon.c:238
+#: ../blconfd/blconf-backend-perchannel-xml.c:322
+#: ../blconfd/blconf-daemon.c:238
 #, c-format
 msgid "Permission denied while modifying property \"%s\" on channel \"%s\""
 msgstr "\"%2$s\" চ্যানেলের \"%1$s\" বৈশিষ্ট্যটি পরিবর্তন করার সময় অনুমোদন প্রত্যাখ্যান করা হয়েছে"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:387
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:469
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:634
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:654 ../xfconf-query/main.c:341
+#: ../blconfd/blconf-backend-perchannel-xml.c:387
+#: ../blconfd/blconf-backend-perchannel-xml.c:469
+#: ../blconfd/blconf-backend-perchannel-xml.c:634
+#: ../blconfd/blconf-backend-perchannel-xml.c:654 ../blconf-query/main.c:341
 #, c-format
 msgid "Property \"%s\" does not exist on channel \"%s\""
 msgstr "\"%2$s\" চ্যানেলে \"%1$s\" বৈশিষ্ট্যটি বিদ্যমান নেই"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:601
+#: ../blconfd/blconf-backend-perchannel-xml.c:601
 #, c-format
 msgid "Unable to remove channel \"%s\": %s"
 msgstr "\"%s\" চ্যানেল অপসারণ করতে ব্যর্থ: %s"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1298
+#: ../blconfd/blconf-backend-perchannel-xml.c:1298
 #, c-format
 msgid "Invalid type for <property>: \"%s\""
 msgstr "<property>-র জন্য অকার্যকর ধরন: \"%s\""
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1314
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1390
+#: ../blconfd/blconf-backend-perchannel-xml.c:1314
+#: ../blconfd/blconf-backend-perchannel-xml.c:1390
 #, c-format
 msgid "Unable to parse value of type \"%s\" from \"%s\""
 msgstr "\"%2$s\" থেকে \"%1$s\" ধরনের মান পার্স করতে ব্যর্থ"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1370
+#: ../blconfd/blconf-backend-perchannel-xml.c:1370
 #, c-format
 msgid "The type attribute of <value> cannot be an array"
 msgstr "<value>-র ধরনের বৈশিষ্ট্য অ্যারে (array) হতে পারবে না"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1379
+#: ../blconfd/blconf-backend-perchannel-xml.c:1379
 #, c-format
 msgid "Invalid type for <value>: \"%s\""
 msgstr "<value>-র জন্য অকার্যকর ধরন: \"%s\""
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1655
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1904
+#: ../blconfd/blconf-backend-perchannel-xml.c:1655
+#: ../blconfd/blconf-backend-perchannel-xml.c:1904
 #, c-format
 msgid "Channel \"%s\" does not exist"
 msgstr "\"%s\" চ্যানেল বিদ্যমান নেই"
 
-#: ../xfconfd/xfconf-backend-perchannel-xml.c:1962
+#: ../blconfd/blconf-backend-perchannel-xml.c:1962
 #, c-format
 msgid "Unable to write channel \"%s\": %s"
 msgstr "\"%s\" চ্যানেল লিখতে ব্যর্থ: %s"
 
-#: ../xfconfd/xfconf-backend-factory.c:76
+#: ../blconfd/blconf-backend-factory.c:76
 #, c-format
-msgid "Unable to find Xfconf backend of type \"%s\""
-msgstr "\"%s\" ধরনের Xfconf ব্যাকেন্ড খুঁজে পেতে ব্যর্থ"
+msgid "Unable to find Blconf backend of type \"%s\""
+msgstr "\"%s\" ধরনের Blconf ব্যাকেন্ড খুঁজে পেতে ব্যর্থ"
 
-#: ../xfconfd/xfconf-backend.c:103
+#: ../blconfd/blconf-backend.c:103
 #, c-format
 msgid "Property names must start with a '/' character"
 msgstr "বৈশিষ্ট্যের নাম অবশ্যই '/' অক্ষর দিয়ে শুরু হতে হবে"
 
-#: ../xfconfd/xfconf-backend.c:112
+#: ../blconfd/blconf-backend.c:112
 #, c-format
 msgid "The root element ('/') is not a valid property name"
 msgstr "মূল উপাদান ('/') কোন কার্যকর বৈশিষ্ট্যের নাম নয়"
 
-#: ../xfconfd/xfconf-backend.c:126
+#: ../blconfd/blconf-backend.c:126
 #, c-format
 msgid ""
 "Property names can only include the ASCII characters A-Z, a-z, 0-9, '_', "
 "'-', '<' and '>', as well as '/' as a separator"
 msgstr "বৈশিষ্ট্যের নামে শুধুমাত্র ASCII অক্ষরসমূহ থাকতে পারবে যেমন: A-Z, a-z, 0-9, '_', '-', '<' এবং '>', বিভাজক হিসেবে '/'"
 
-#: ../xfconfd/xfconf-backend.c:135
+#: ../blconfd/blconf-backend.c:135
 #, c-format
 msgid "Property names cannot have two or more consecutive '/' characters"
 msgstr "বৈশিষ্ট্যের নামে পরপর দুই বা ততোধিকবার '/' অক্ষর থাকতে পারবে না"
 
-#: ../xfconfd/xfconf-backend.c:146
+#: ../blconfd/blconf-backend.c:146
 #, c-format
 msgid "Property names cannot end with a '/' character"
 msgstr "বৈশিষ্ট্যের নাম '/' অক্ষর দিয়ে সমাপ্ত হতে পারবে না"
 
-#: ../xfconfd/xfconf-backend.c:163
+#: ../blconfd/blconf-backend.c:163
 #, c-format
 msgid "Channel name cannot be an empty string"
 msgstr "চ্যানেলের নাম ফাঁকা স্ট্রিং হতে পারবে না"
 
-#: ../xfconfd/xfconf-backend.c:176
+#: ../blconfd/blconf-backend.c:176
 #, c-format
 msgid ""
 "Channel names can only include the ASCII characters A-Z, a-z, 0-9, '_', and "
 "'-'"
 msgstr "চ্যানেলের নামে শুধুমাত্র ASCII অক্ষরসমূহ A-Z, a-z, 0-9, '_', এবং '-' থাকতে পারবে"
 
-#: ../xfconfd/xfconf-backend.c:398
+#: ../blconfd/blconf-backend.c:398
 #, c-format
 msgid ""
 "The property name can only be empty or \"/\" if a recursive reset was "
 "specified"
 msgstr "পুনরাবৃত্ত পুনঃনির্ধারণ উল্লিখিত থাকলে বৈশিষ্ট্যের নাম শুধুমাত্র ফাঁকা বা \"/\" হতে পারবে"
 
-#: ../xfconfd/main.c:134
-msgid "Prints the xfconfd version."
-msgstr "xfconfd সংস্করণ মুদ্রণ করে।"
+#: ../blconfd/main.c:134
+msgid "Prints the blconfd version."
+msgstr "blconfd সংস্করণ মুদ্রণ করে।"
 
-#: ../xfconfd/main.c:136
+#: ../blconfd/main.c:136
 msgid ""
 "Configuration backends to use.  The first backend specified is opened "
 "read/write; the others, read-only."
 msgstr "যেসব কনফিগারেশন ব্যাকেন্ড ব্যবহার করা হবে।  উল্লিখিত প্রথম ব্যাকেন্ড পাঠযোগ্য/লিখনযোগ্য মোডে খোলা হবে; অন্যান্যগুলো, শুধুমাত্র-পাঠযোগ্য মোডে।  "
 
-#: ../xfconfd/main.c:139
+#: ../blconfd/main.c:139
 msgid "Fork into background after starting; only useful for testing purposes"
 msgstr "আরম্ভের পর পটভূমিতে ফর্ক করা হবে; শুধুমাত্র পরীক্ষণের উদ্দেশ্যে ব্যবহারযোগ্য"
 
-#: ../xfconfd/main.c:159
+#: ../blconfd/main.c:159
 msgid "Xfce Configuration Daemon"
 msgstr "Xfce কনফিগারেশন ডিমন"
 
-#: ../xfconfd/main.c:165
+#: ../blconfd/main.c:165
 msgid "Xfce configuration daemon"
 msgstr "Xfce কনফিগারেশন ডিমন"
 
-#: ../xfconfd/main.c:167
+#: ../blconfd/main.c:167
 msgid "Report bugs to http://bugs.xfce.org/\n"
 msgstr "বাগসমূহ রিপোর্ট করতে পারেন http://bugs.xfce.org/-এ\n"
 
-#: ../xfconfd/main.c:170
+#: ../blconfd/main.c:170
 #, c-format
 msgid "Error parsing options: %s\n"
 msgstr "পার্সিং অপশনে ত্রুটি: %s\n"
 
-#: ../xfconfd/xfconf-daemon.c:482
+#: ../blconfd/blconf-daemon.c:482
 #, c-format
-msgid "Another Xfconf daemon is already running"
-msgstr "অপর একটি Xfconf ডিমন ইতিমধ্যেই সচল রয়েছে"
+msgid "Another Blconf daemon is already running"
+msgstr "অপর একটি Blconf ডিমন ইতিমধ্যেই সচল রয়েছে"
 
-#: ../xfconfd/xfconf-daemon.c:517
+#: ../blconfd/blconf-daemon.c:517
 #, c-format
 msgid "No backends could be started"
 msgstr "কোন ব্যাকেন্ড আরম্ভ করা যায়নি"
 
-#: ../xfconf-query/main.c:90 ../xfconf-query/main.c:95
+#: ../blconf-query/main.c:90 ../blconf-query/main.c:95
 msgid "set"
 msgstr ""
 
-#: ../xfconf-query/main.c:100
+#: ../blconf-query/main.c:100
 msgid "reset"
 msgstr ""
 
-#: ../xfconf-query/main.c:176
+#: ../blconf-query/main.c:176
 msgid "Version information"
 msgstr "সংস্করণ তথ্যাবলী"
 
-#: ../xfconf-query/main.c:180
+#: ../blconf-query/main.c:180
 msgid "The channel to query/modify"
 msgstr "জিজ্ঞাসা/পরিবর্তনের চ্যানেল"
 
-#: ../xfconf-query/main.c:184
+#: ../blconf-query/main.c:184
 msgid "The property to query/modify"
 msgstr "জিজ্ঞাসা/পরিবর্তনের বৈশিষ্ট্য"
 
-#: ../xfconf-query/main.c:188
+#: ../blconf-query/main.c:188
 msgid "The new value to set for the property"
 msgstr "বৈশিষ্ট্যের জন্য নতুন যে মান নির্ধারণ করতে হবে"
 
-#: ../xfconf-query/main.c:192
+#: ../blconf-query/main.c:192
 msgid "List properties (or channels if -c is not specified)"
 msgstr "বৈশিষ্ট্যাবলীর তালিকা করা হবে (অথবা চ্যানেল যদি -c উল্লিখিত না থাকে)"
 
-#: ../xfconf-query/main.c:196
+#: ../blconf-query/main.c:196
 msgid "Verbose output"
 msgstr "বাগাড়ম্বর আউটপুট"
 
-#: ../xfconf-query/main.c:200
+#: ../blconf-query/main.c:200
 msgid "Create a new property if it does not already exist"
 msgstr "নতুন একটি বৈশিষ্ট্য তৈরি করুন যদি এটি ইতিমধ্যেই বিদ্যমান না থাকে"
 
-#: ../xfconf-query/main.c:204
+#: ../blconf-query/main.c:204
 msgid "Specify the property value type"
 msgstr "বৈশিষ্ট্যের মানের ধরন সুনির্দিষ্টভাবে উল্লেখ করুন"
 
-#: ../xfconf-query/main.c:208
+#: ../blconf-query/main.c:208
 msgid "Reset property"
 msgstr "বৈশিষ্ট্য পুনঃনির্ধারণ"
 
-#: ../xfconf-query/main.c:212
+#: ../blconf-query/main.c:212
 msgid "Recursive (use with -r)"
 msgstr "পুনরাবৃত্ত (-r-এর সাথে ব্যবহার করুন)"
 
-#: ../xfconf-query/main.c:216
+#: ../blconf-query/main.c:216
 msgid "Force array even if only one element"
 msgstr "শুধুমাত্র একটি উপাদান থাকলেও অ্যারে (array) হিসেবে থাকতে বাধ্য করা হবে"
 
-#: ../xfconf-query/main.c:220
+#: ../blconf-query/main.c:220
 msgid "Invert an existing boolean property"
 msgstr ""
 
-#: ../xfconf-query/main.c:224
+#: ../blconf-query/main.c:224
 msgid "Monitor a channel for property changes"
 msgstr "বৈশিষ্ট্যের পরিবর্তন দেখার জন্য একটি চ্যানেল পর্যবেক্ষণ করা হবে"
 
-#: ../xfconf-query/main.c:246
+#: ../blconf-query/main.c:246
 #, c-format
-msgid "Failed to init libxfconf: %s"
+msgid "Failed to init libblconf: %s"
 msgstr ""
 
-#: ../xfconf-query/main.c:251
-msgid "- Xfconf commandline utility"
+#: ../blconf-query/main.c:251
+msgid "- Blconf commandline utility"
 msgstr ""
 
-#: ../xfconf-query/main.c:256
+#: ../blconf-query/main.c:256
 #, c-format
 msgid "Option parsing failed: %s"
 msgstr ""
 
-#: ../xfconf-query/main.c:266
+#: ../blconf-query/main.c:266
 msgid "The Xfce development team. All rights reserved."
 msgstr ""
 
-#: ../xfconf-query/main.c:267
+#: ../blconf-query/main.c:267
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr ""
 
-#: ../xfconf-query/main.c:279
+#: ../blconf-query/main.c:279
 msgid "Channels:"
 msgstr ""
 
-#: ../xfconf-query/main.c:295
+#: ../blconf-query/main.c:295
 msgid "No property specified"
 msgstr ""
 
-#: ../xfconf-query/main.c:301
+#: ../blconf-query/main.c:301
 msgid "--create and --reset options can not be used together"
 msgstr ""
 
-#: ../xfconf-query/main.c:307
+#: ../blconf-query/main.c:307
 msgid "--create and --reset options can not be used together with --list"
 msgstr ""
 
-#: ../xfconf-query/main.c:319
+#: ../blconf-query/main.c:319
 #, c-format
 msgid "Start monitoring channel \"%s\":"
 msgstr ""
 
-#: ../xfconf-query/main.c:353 ../xfconf-query/main.c:458
-#: ../xfconf-query/main.c:527
+#: ../blconf-query/main.c:353 ../blconf-query/main.c:458
+#: ../blconf-query/main.c:527
 msgid "Failed to set property"
 msgstr ""
 
-#: ../xfconf-query/main.c:357
+#: ../blconf-query/main.c:357
 msgid "--toggle only works with boolean values"
 msgstr ""
 
-#: ../xfconf-query/main.c:366 ../xfconf-query/main.c:385
+#: ../blconf-query/main.c:366 ../blconf-query/main.c:385
 msgid "(unknown)"
 msgstr "(অজানা)"
 
-#: ../xfconf-query/main.c:375
+#: ../blconf-query/main.c:375
 #, c-format
 msgid "Value is an array with %d items:"
 msgstr ""
 
-#: ../xfconf-query/main.c:399
+#: ../blconf-query/main.c:399
 #, c-format
 msgid ""
 "Property \"%s\" does not exist on channel \"%s\". If a new property should "
 "be created, use the --create option"
 msgstr ""
 
-#: ../xfconf-query/main.c:407
+#: ../blconf-query/main.c:407
 msgid "When creating a new property, the value type must be specified"
 msgstr ""
 
-#: ../xfconf-query/main.c:417
+#: ../blconf-query/main.c:417
 msgid "Failed to get the existing type for the value"
 msgstr ""
 
-#: ../xfconf-query/main.c:435
+#: ../blconf-query/main.c:435
 msgid "Unable to determine the type of the value"
 msgstr ""
 
-#: ../xfconf-query/main.c:441
+#: ../blconf-query/main.c:441
 msgid "A value type must be specified to change an array into a single value"
 msgstr ""
 
-#: ../xfconf-query/main.c:451 ../xfconf-query/main.c:512
+#: ../blconf-query/main.c:451 ../blconf-query/main.c:512
 #, c-format
 msgid "Unable to convert \"%s\" to type \"%s\""
 msgstr ""
 
-#: ../xfconf-query/main.c:483
+#: ../blconf-query/main.c:483
 #, c-format
 msgid "There are %d new values, but only %d types could be determined"
 msgstr ""
 
-#: ../xfconf-query/main.c:504
+#: ../blconf-query/main.c:504
 #, c-format
 msgid "Unable to determine type of value at index %d"
 msgstr ""
 
-#: ../xfconf-query/main.c:554
+#: ../blconf-query/main.c:554
 #, c-format
 msgid "Channel \"%s\" contains no properties"
 msgstr ""

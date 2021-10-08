@@ -1,5 +1,5 @@
 /*
- *  xfconf
+ *  blconf
  *
  *  Copyright (c) 2007 Brian Tarricone <bjt23@cornell.edu>
  *
@@ -17,8 +17,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
-#ifndef __XFCONF_TESTS_COMMON_H__
-#define __XFCONF_TESTS_COMMON_H__
+#ifndef __BLCONF_TESTS_COMMON_H__
+#define __BLCONF_TESTS_COMMON_H__
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
@@ -42,7 +42,7 @@
 
 #include <glib.h>
 #include <dbus/dbus.h>
-#include <xfconf/xfconf.h>
+#include <blconf/blconf.h>
 
 #define TEST_CHANNEL_NAME  "test-channel"
 #define WAIT_TIMEOUT       15
@@ -50,7 +50,7 @@
 #define TEST_OPERATION(x) G_STMT_START{ \
     if(!(x)) { \
         g_critical("Test failed: " # x); \
-        xfconf_tests_end(); \
+        blconf_tests_end(); \
         return 1; \
     } \
 }G_STMT_END
@@ -71,10 +71,10 @@ const gchar *test_bool_property = "/test/booltest/bool";
 const gboolean test_bool = TRUE;
 const gchar *test_array_property = "/test/arrayprop";
 
-static void xfconf_tests_end();
+static void blconf_tests_end();
 
 static gboolean
-xfconf_tests_start(void)
+blconf_tests_start(void)
 {
     DBusConnection *dbus_conn;
     DBusMessage *msg, *ret;
@@ -82,17 +82,17 @@ xfconf_tests_start(void)
     GTimeVal start, now;
     GError *error = NULL;
 
-    /* wait until xfconfd finishes starting */
+    /* wait until blconfd finishes starting */
     dbus_error_init(&derror);
     dbus_conn = dbus_bus_get(DBUS_BUS_SESSION, NULL);
     if(!dbus_conn) {
         g_critical("Failed to connect to D-Bus: %s", derror.message);
         dbus_error_free(&derror);
-        xfconf_tests_end();
+        blconf_tests_end();
         return FALSE;
     }
-    msg = dbus_message_new_method_call("org.xfce.Xfconf",
-                                      "/org/xfce/Xfconf",
+    msg = dbus_message_new_method_call("org.blade.Blconf",
+                                      "/org/blade/Blconf",
                                       "org.freedesktop.DBus.Peer",
                                       "Ping");
     g_get_current_time(&start);
@@ -101,10 +101,10 @@ xfconf_tests_start(void)
     {
         g_get_current_time(&now);
         if(now.tv_sec - start.tv_sec > WAIT_TIMEOUT) {
-            g_critical("xfconfd failed to start after %d seconds", WAIT_TIMEOUT);
+            g_critical("blconfd failed to start after %d seconds", WAIT_TIMEOUT);
             dbus_message_unref(msg);
             dbus_connection_unref(dbus_conn);
-            xfconf_tests_end();
+            blconf_tests_end();
             return FALSE;
         }
     }
@@ -112,10 +112,10 @@ xfconf_tests_start(void)
     dbus_message_unref(ret);
     dbus_connection_unref(dbus_conn);
 
-    if(!xfconf_init(&error)) {
-        g_critical("Failed to init libxfconf: %s", error->message);
+    if(!blconf_init(&error)) {
+        g_critical("Failed to init libblconf: %s", error->message);
         g_error_free(error);
-        xfconf_tests_end();
+        blconf_tests_end();
         return FALSE;
     }
     
@@ -123,9 +123,9 @@ xfconf_tests_start(void)
 }
 
 static void
-xfconf_tests_end(void)
+blconf_tests_end(void)
 {
-    xfconf_shutdown();
+    blconf_shutdown();
 }
 
-#endif  /* __XFCONF_TESTS_COMMON_H__ */
+#endif  /* __BLCONF_TESTS_COMMON_H__ */

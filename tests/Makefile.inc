@@ -14,7 +14,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
 
 TESTS = $(check_PROGRAMS)
-TESTS_ENVIRONMENT = XDG_CONFIG_HOME="$(top_builddir)/tests/test-xdg_config_home" XFCONFD="$(top_builddir)/xfconfd/xfconfd"
+TESTS_ENVIRONMENT = XDG_CONFIG_HOME="$(top_builddir)/tests/test-xdg_config_home" BLCONFD="$(top_builddir)/blconfd/blconfd"
 
 AM_CFLAGS = \
 	-I$(top_srcdir) \
@@ -23,5 +23,5 @@ AM_CFLAGS = \
 	$(DBUS_CFLAGS)
 
 LIBS = \
-	$(top_builddir)/xfconf/libxfconf-$(LIBXFCONF_VERSION_API).la
+	$(top_builddir)/blconf/libblconf-$(LIBBLCONF_VERSION_API).la
 

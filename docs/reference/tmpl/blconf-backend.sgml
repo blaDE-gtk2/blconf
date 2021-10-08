@@ -1,0 +1,147 @@
+<!-- ##### SECTION Title ##### -->
+BlconfBackend
+
+<!-- ##### SECTION Short_Description ##### -->
+Interface for configuration store backends
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+BlconfBackend is an abstract interface that allows the Blconf Daemon
+to use different backends for storing configuration data.  These backends
+can be flat text or binary files, a database, or just about anything
+one could think of to store data.
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT BlconfBackendInterface ##### -->
+<para>
+
+</para>
+
+@parent: GObject interface parent.
+@initialize: See blconf_backend_initialize().
+@set: See blconf_backend_set().
+@get: See blconf_backend_get().
+@get_all: See blconf_backend_get_all().
+@exists: See blconf_backend_exists().
+@reset: See blconf_backend_reset().
+@list_channels: See blconf_backend_list_channels().
+@is_property_locked: See blconf_backend_is_property_locked().
+@flush: See blconf_backend_flush().
+@register_property_changed_func: See blconf_backend_register_property_changed_func().
+@_xb_reserved0: Reserved for future expansion.
+@_xb_reserved1: Reserved for future expansion.
+@_xb_reserved2: Reserved for future expansion.
+@_xb_reserved3: Reserved for future expansion.
+
+<!-- ##### STRUCT BlconfBackend ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION blconf_backend_initialize ##### -->
+<para>
+
+</para>
+
+@backend: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_backend_set ##### -->
+<para>
+
+</para>
+
+@backend: 
+@channel: 
+@property: 
+@value: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_backend_get ##### -->
+<para>
+
+</para>
+
+@backend: 
+@channel: 
+@property: 
+@value: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_backend_get_all ##### -->
+<para>
+
+</para>
+
+@backend: 
+@channel: 
+@property_base: 
+@properties: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_backend_exists ##### -->
+<para>
+
+</para>
+
+@backend: 
+@channel: 
+@property: 
+@exists: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_backend_reset ##### -->
+<para>
+
+</para>
+
+@backend: 
+@channel: 
+@property: 
+@recursive: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_backend_flush ##### -->
+<para>
+
+</para>
+
+@backend: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION blconf_backend_register_property_changed_func ##### -->
+<para>
+
+</para>
+
+@backend: 
+@func: 
+@user_data: 
+
+

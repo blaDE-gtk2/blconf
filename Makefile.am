@@ -1,9 +1,9 @@
 SUBDIRS = \
 	common \
-	xfconf \
-	xfconfd \
-	xfconf-query \
-	xfconf-perl \
+	blconf \
+	blconfd \
+	blconf-query \
+	blconf-perl \
 	po \
 	docs \
 	tests

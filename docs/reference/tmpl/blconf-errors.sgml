@@ -1,0 +1,46 @@
+<!-- ##### SECTION Title ##### -->
+Error Reporting
+
+<!-- ##### SECTION Short_Description ##### -->
+Blconf library and daemon error descriptions
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+Both the Blconf daemon and library provide error information via the
+use of #GError<!-- -->s.
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO BLCONF_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM BlconfError ##### -->
+<para>
+
+</para>
+
+@BLCONF_ERROR_UNKNOWN: An unknown error occurred
+@BLCONF_ERROR_CHANNEL_NOT_FOUND: The specified channel does not exist
+@BLCONF_ERROR_PROPERTY_NOT_FOUND: The specified property does not exist on the channel
+@BLCONF_ERROR_READ_FAILURE: There was a failure reading from the configuration store
+@BLCONF_ERROR_WRITE_FAILURE: There was a failure writing to the configuration store
+@BLCONF_ERROR_PERMISSION_DENIED: The user is not allowed to read or write to the channel or property
+@BLCONF_ERROR_INTERNAL_ERROR: An internal error (likely a bug in blconf) occurred
+@BLCONF_ERROR_NO_BACKEND: No backends were found, or those found could not be loaded
+@BLCONF_ERROR_INVALID_PROPERTY: The property name specified was invalid
+@BLCONF_ERROR_INVALID_CHANNEL: The channel name specified was invalid
+
